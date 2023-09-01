@@ -12,10 +12,7 @@ body {
     padding-left: calc(50% - 600px);
     padding-right: calc(50% - 600px);
 } 
-.top {
-    
-    
-}
+
 .level {
     width: 1024px;
     height: 774px;
@@ -89,4 +86,49 @@ body {
     font-weight: 400;
     line-height: 32px;
    
+}
+.game {
+    width: 1024px;
+    height: 774px;
+
+}
+.game-box {
+    display: flex;
+    flex-direction: column;
+    margin-top: 22px;
+    margin-left: 22px;
+    margin-right: 22px;
+
+}
+.data-game-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.button-game {
+    width: 246px;
+    height: 50.003173828125px;
+    border-radius: 12px;
+    background-color:#7AC100;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0em;
+    color: white;
+
+
+}
+.cart-game {
+    margin-top: 32px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    row-gap: 15.6px;
+    row-gap: 15.6px;
+}
+.cart-item {
+    width: 95px;
+    height: 133px;
+    background-image: url(img/рубашка.png);
 }
