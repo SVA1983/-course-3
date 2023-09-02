@@ -8,9 +8,10 @@ export function renderStartPageComponent({appEl}) {
                     <p class="level-text">Выбери сложность</p>
                 </div>
                 <div class="level-num">
-                    <button class="num-item">1</button>
-                    <button class="num-item">2</button>
-                    <button class="num-item">3</button>
+                    <button data-index = "1" class="num-item">1</button>
+                    <button data-index = "2" class="num-item">2</button>
+                    <button data-index = "3" class="num-item">3</button>
+               
                 </div>
                 <button class="button-level">Старт</button>
             </div>
@@ -18,18 +19,30 @@ export function renderStartPageComponent({appEl}) {
         appEl.innerHTML = appHtml;
 
         
-
-        for (let levelEl of document.querySelectorAll(".num-item")) {
+      
+   
+        for (let levelEl of document.querySelectorAll(".num-item")) { 
+            const index = levelEl.dataset.index; 
             levelEl.addEventListener("click", () => {
-             levelGame = 1;
-             render()
-            });
-            
-        };
-
-        playGame(levelGame)    
+                levelEl.classList.add("active");
+                if(index == 1) { 
+                    levelGame = 1; 
+                }
+                if (index ==2) {
+                    levelGame = 2
+                }
+                if (index == 3) {
+                    levelGame = 3
+                }; 
+            playGame(levelGame) 
+            });    
+        };    
     }; 
 
     render()
     
 }
+
+     // <button class="${levelGame? "num-item active" : "num-item"}">1</button>
+                    // <button class="${levelGame? "num-item active" : "num-item"}">2</button>
+                    // <button class="${levelGame? "num-item active" : "num-item"}">3</button>

@@ -1,3 +1,4 @@
+import { againGame } from "./helpers.js";
 export function renderGamePageComponent({appEl}) {
     const render = () => {  
         const appHtml = `<div class="game">
@@ -11,46 +12,50 @@ export function renderGamePageComponent({appEl}) {
                 </div>       
             </div> 
             <div class="cart-game">
-                <a href="" class="cart-item"></a>
-                <a href="" class="cart-item"></a>
-                <a href="" class="cart-item"></a>
-                <a href="" class="cart-item"></a>
-                <a href="" class="cart-item"></a>
-                <a href="" class="cart-item"></a>
-                <a href="" class="cart-item"></a>
-                <a href="" class="cart-item"></a>
-                <a href="" class="cart-item"></a>
-                <a href="" class="cart-item"></a>
-                <a href="" class="cart-item"></a>
-                <a href="" class="cart-item"></a>
-                <a href="" class="cart-item"></a>
-                <a href="" class="cart-item"></a>
-                <a href="" class="cart-item"></a>
-                <a href="" class="cart-item"></a>
-                <a href="" class="cart-item"></a>
-                <a href="" class="cart-item"></a>
-                <a href="" class="cart-item"></a>
-                <a href="" class="cart-item"></a>
-                <a href="" class="cart-item"></a>
-                <a href="" class="cart-item"></a>
-                <a href="" class="cart-item"></a>
-                <a href="" class="cart-item"></a>
-                <a href="" class="cart-item"></a>
-                <a href="" class="cart-item"></a>
-                <a href="" class="cart-item"></a>
-                <a href="" class="cart-item"></a>
-                <a href="" class="cart-item"></a>
-                <a href="" class="cart-item"></a>
-                <a href="" class="cart-item"></a>
-                <a href="" class="cart-item"></a>
-                <a href="" class="cart-item"></a>
-                <a href="" class="cart-item"></a>
-                <a href="" class="cart-item"></a>
-                <a href="" class="cart-item"></a>
+            <div class="cart-item"></div>
+                    <div class="cart-item"></div>
+                    <div class="cart-item"></div>
+                    <div class="cart-item"></div>
+                    <div class="cart-item"></div>
+                    <div class="cart-item"></div>
+                    <div class="cart-item"></div>
+                    <div class="cart-item"></div>
+                    <div class="cart-item"></div>
+                    <div class="cart-item"></div>
+                    <div class="cart-item"></div>
+                    <div class="cart-item"></div>
+                    <div class="cart-item"></div>
+                    <div class="cart-item"></div>
+                    <div class="cart-item"></div>
+                    <div class="cart-item"></div>
+                    <div class="cart-item"></div>
+                    <div class="cart-item"></div>
+                    <div class="cart-item"></div>
+                    <div class="cart-item"></div>
+                    <div class="cart-item"></div>
+                    <div class="cart-item"></div>
+                    <div class="cart-item"></div>
+                    <div class="cart-item"></div>
+                    <div class="cart-item"></div>
+                    <div class="cart-item"></div>
+                    <div class="cart-item"></div>
+                    <div class="cart-item"></div>
+                    <div class="cart-item"></div>
+                    <div class="cart-item"></div>
+                    <div class="cart-item"></div>
+                    <div class="cart-item"></div>
+                    <div class="cart-item"></div>
+                    <div class="cart-item"></div>
+                    <div class="cart-item"></div>
+                    <div class="cart-item"></div>  
             </div>  
         </div>     
     </div>`;
         appEl.innerHTML = appHtml;
+
+        againGame();
+
+
 
         
  

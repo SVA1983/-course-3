@@ -87,6 +87,10 @@ body {
     line-height: 32px;
    
 }
+.active {
+    background-color: #004980;
+    color: #FFFFFF;
+}
 .game {
     width: 1024px;
     height: 774px;
@@ -131,4 +135,13 @@ body {
     width: 95px;
     height: 133px;
     background-image: url(img/рубашка.png);
+}
+.cart-img {
+    margin-top: 32px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    row-gap: 15.6px;
+    row-gap: 15.6px;
+
 }
